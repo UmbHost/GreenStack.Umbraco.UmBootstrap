@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="17.3.3" />
-    <PackageReference Include="Umbraco.Cms.DevelopmentMode.Backoffice" Version="17.3.3" />
+    <PackageReference Include="Umbraco.Cms.DevelopmentMode.Backoffice" Version="17.3.4" />
     <PackageReference Include="Umbraco.Community.Templates.UmBootstrap" Version="17.2.2" />
   </ItemGroup>
 
