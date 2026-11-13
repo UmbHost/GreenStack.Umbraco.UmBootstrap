@@ -5,9 +5,7 @@ A GitHub template repository for Umbraco 17 with UmBootstrap, preconfigured for 
 ## What's included
 
 - Umbraco 17 on .NET 10 with [UmBootstrap](https://marketplace.umbraco.com/package/umbraco.community.templates.umbootstrap) starter kit
-- Forwarded headers middleware for Traefik proxy
-- HTTPS runtime validator removed (SSL terminated by GreenStack)
-- Data protection keys persisted to `/app/keys` in production
+- The [UmbHost GreenStack package](https://www.nuget.org/packages/UmbHost.GreenStack.Umbraco.Configuration), which configures the site for GreenStack when it runs there: forwarded headers, the HTTPS checks, Data Protection keys on shared storage, and load balancing when the site runs 2 or more replicas
 - Multi-stage Dockerfile exposing port 8080
 - Docker launch profile (HTTP)
 - Dependabot configured for weekly Umbraco updates
