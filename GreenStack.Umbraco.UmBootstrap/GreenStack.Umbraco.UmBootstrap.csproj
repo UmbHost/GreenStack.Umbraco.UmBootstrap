@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="17.4.2" />
     <PackageReference Include="Umbraco.Cms.DevelopmentMode.Backoffice" Version="17.4.2" />
+    <PackageReference Include="UmbHost.GreenStack.Umbraco.Configuration" Version="1.1.0" />
     <PackageReference Include="Umbraco.Community.Templates.UmBootstrap" Version="17.2.2" />
   </ItemGroup>
 
@@ -17,10 +18,5 @@
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="72.1.0.3" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="72.1.0.3" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
-
-  <PropertyGroup>
-    <!-- Razor files are needed for the backoffice to work correctly -->
-    <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
-  </PropertyGroup>
 
 </Project>
